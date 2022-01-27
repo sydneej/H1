@@ -44,11 +44,16 @@ public class FutureValueApp {
 
             //format and display the result
             NumberFormat currently = NumberFormat.getCurrencyInstance();
-            System.out.println("Future value:        "
+            System.out.println("Future value:               "
                     + currency.format(futureValue) + "\n");
 
             //see if the user wants to continue
             System.out.println("Continue? (y/n): ");
+            choice = sc.next();
+            System.out.println();
+
+            // tell the user to hit next
+            System.out.println("Hit accept to continue (accept/decline): ");
             choice = sc.next();
             System.out.println();
 
